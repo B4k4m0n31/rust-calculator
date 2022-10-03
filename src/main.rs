@@ -5,21 +5,27 @@ fn main() {
 }
 
 fn calculator() {
+    println!("");
     println!("----------------------------");
     println!("|                          |");
     println!("|  Rust Simple Calculator  |");
     println!("|                          |");
     println!("----------------------------");
+    println!("");
 
     let num1: i32 = get_number();
     let num2: i32 = get_number();
+
+    println!("");
 
     let operator: char = get_operator();
 
     let result: i32 = calculate(num1, num2, operator);
 
+    println!("");
+
     println!(
-        "The result of {} {} {} = {}",
+        "The result of {} {} {} = {}\n",
         num1, operator, num2, result
     )
 }
